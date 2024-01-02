@@ -19,6 +19,6 @@ jobs:
       uses: ncipollo/release-action@v1
       with:
         artifacts: "build/app/outputs/apk/debug/*.apk"
-        replacesArtifacts: false
         token: ${{ secrets.TOKEN }}
-        allowUpdates: true
+        commit: master
+        tag: v1.0.${{ github.run_number }}
