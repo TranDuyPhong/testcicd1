@@ -1,9 +1,6 @@
 name: Release
 on: 
-  push:
-    tags:
-    - 'main'
-
+  push
 jobs:
   build:
     name: Build APK
